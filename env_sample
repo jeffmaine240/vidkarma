@@ -1,0 +1,43 @@
+# Environment Selection Options: dev, staging, production
+PYTHON_ENV=dev
+
+
+# app configuration
+APP_NAME=VidKarma
+APP_DESCRIPTION=FastAPI application for video management
+APP_VERSION=0.1.0
+APP_SECRET_KEY=
+DEBUG=True
+LOG_LEVEL=DEBUG
+
+
+# Database configuration
+DB_NAME=fastapi
+DB_USER=macbook
+DB_PASSWORD
+DB_HOST=localhost
+DB_PORT=5432
+DB_TYPE=postgresql
+
+# JWT configuration
+ACCESS_SECRET_KEY=
+REFRESH_SECRET_KEY=
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+REFRESH_TOKEN_EXPIRE_MINUTES=10080
+
+# Google Oauth
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_REDIRECT_URI=http://localhost:8000/api/v1/oauth/google/callback
+
+# Email configuration
+MAIL_FROM_NAME=VidKarma
+MAIL_USERNAME=jeffmaine221@gmail.com
+MAIL_PASSWORD=
+MAIL_FROM=jeffmaine221@gmail.com
+MAIL_PORT=465
+MAIL_SERVER=smtp.gmail.com
+
+# redis
+REDIS_URL=redis://localhost:6379/0
